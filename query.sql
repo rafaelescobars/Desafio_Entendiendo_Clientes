@@ -4,6 +4,9 @@
 --Desactivar autocommit
 \set AUTOCOMMIT false
 
+--Llamar a unidad2.sql
+\i 'C:\\Users\\rafae\\OneDrive - usach.cl\\Commits_Git_Longpaths\\Desafio_Entendiendo_Clientes\\unidad2.sql'
+
 --Realizar compra por partr frl cliente usuario01
 BEGIN TRANSACTION;
     UPDATE public.producto SET stock = stock - 5 WHERE descripcion='producto9';
